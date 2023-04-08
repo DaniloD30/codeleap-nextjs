@@ -7,7 +7,7 @@ import { Box } from "@mui/system";
 import { useState } from "react";
 
 export default function MainScreen() {
-  const [page, setPage] = useState<number>(2);
+  const [page, setPage] = useState<number>(0);
   const [rowPerPage, setRowsPerPage] = useState<number>(10);
 
   const { data, isLoading } = usePosts(page, rowPerPage);

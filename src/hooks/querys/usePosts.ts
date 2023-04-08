@@ -29,10 +29,10 @@ export async function getPosts({
     params: {
       limit: limit,
       offset:
-        page === 1 ? (Number(page) - 1) * 10 : (Number(page) - 1) * 10 + 10,
+        page === 0 ? 0 : (Number(page+1) - 1) * 10 + 10,
     },
   });
-
+ 
   const posts_results: Post[] = data.data?.results;
   const total_count = data.data?.count;
 
