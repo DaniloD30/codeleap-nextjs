@@ -19,7 +19,6 @@ The following tools were used in building the project:
 - [ReactJS](https://pt-br.reactjs.org/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Material UI](https://chakra-ui.com/guides/first-steps)
-- [Radix UI](https://www.radix-ui.com)
 - [ReactQuery](https://react-query.tanstack.com)
 - [Yup](https://github.com/jquense/yup)
 - [Axios](https://axios-http.com/docs/intro)
