@@ -4,7 +4,7 @@ import { Box } from "@mui/system";
 import iconEdit from "../../assets/edit.png";
 import iconTrash from "../../assets/trash.png";
 import Image from "next/image";
-import {useAppSelector} from "../../redux/store/hook";
+import { useAppSelector } from "../../redux/store/hook";
 import { selectUserName } from "../../redux/slices/users";
 import { Post } from "../../hooks/querys/usePosts";
 import ModalEdit from "../../components/Modal/ModalEdit";
@@ -18,7 +18,7 @@ export default function CardItem({ post }: Item) {
   const userNameState = useAppSelector(selectUserName);
   const [openModalEdit, setOpenModalEdit] = useState<boolean>(false);
   const [openModalDelete, setOpenModalDelete] = useState<boolean>(false);
-  
+
   const handleEdit = () => {
     setOpenModalEdit(true);
   };
@@ -70,13 +70,13 @@ export default function CardItem({ post }: Item) {
                 sx={{ marginRight: "34px" }}
                 onClick={() => handleDelete()}
               >
-                <Image src={iconTrash} alt="icon-delete" />
+                {iconTrash ? <Image src={iconTrash} alt="icon-delete" /> : null}
               </IconButton>
               <IconButton
                 sx={{ marginRight: "24px" }}
                 onClick={() => handleEdit()}
               >
-                <Image src={iconEdit} alt="icon-edit" />
+                {iconEdit ? <Image src={iconEdit} alt="icon-edit" /> : null}
               </IconButton>
             </Box>
           ) : null}

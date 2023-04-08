@@ -19,10 +19,10 @@ const NotFound: FC = () => {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            flexDirection: 'column',
+            flexDirection: "column",
           }}
         >
-          <Image src={codeLeapImg} alt="error" />
+          {codeLeapImg ? <Image src={codeLeapImg} alt="error" /> : null}
 
           <Typography
             sx={{

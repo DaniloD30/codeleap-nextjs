@@ -1,13 +1,13 @@
-import Header from "../../components/Header"
-import CardItem from "../../components/CardItem"
-import CardContent from "../../components/CardContent"
-import { Post, usePosts} from "../../hooks/querys/usePosts";
+import Header from "../../components/Header";
+import CardItem from "../../components/CardItem";
+import CardContent from "../../components/CardContent";
+import { Post, usePosts } from "../../hooks/querys/usePosts";
 import { Skeleton, Stack, TablePagination } from "@mui/material";
 import { Box } from "@mui/system";
 import { useState } from "react";
 
 export default function MainScreen() {
-  const [page, setPage] = useState<number>(1);
+  const [page, setPage] = useState<number>(2);
   const [rowPerPage, setRowsPerPage] = useState<number>(10);
 
   const { data, isLoading } = usePosts(page, rowPerPage);

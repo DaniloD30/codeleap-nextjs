@@ -37,7 +37,9 @@ export default function Header() {
         CodeLeap Network
       </Typography>
       <Box sx={{ marginRight: "25px" }}>
-        <Image src={codeLeapImg} alt="home" height={75} />
+        {codeLeapImg ? (
+          <Image src={codeLeapImg} alt="home" height={75} />
+        ) : null}
       </Box>
 
       <Button

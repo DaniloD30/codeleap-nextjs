@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
 
 import "@testing-library/jest-dom";
-import MainScreen from ".";
+import CardContent from ".";
 import { store } from "../../redux/store";
 import { QueryClient, QueryClientProvider } from "react-query";
 
@@ -29,12 +29,12 @@ jest.mock('next/router', () => ({
       });
     },
   }));
-describe("MainScreen", () => {
+describe("CardContent", () => {
   it("renders a heading", () => {
     render(
       <QueryClientProvider client={queryClient}>
         <Provider store={store}>
-          <MainScreen />
+          <CardContent />
         </Provider>
       </QueryClientProvider>
     );
