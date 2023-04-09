@@ -152,9 +152,9 @@ export default function CardContent() {
                 style={{
                   width: "704px",
                   height: "32px",
-                  background: "#FFFFFF", // se repete
-                  border: "1px solid #777777", // se repete
-                  borderRadius: "8px", //se repete
+                  background: "#FFFFFF", 
+                  border: "1px solid #777777", 
+                  borderRadius: "8px", 
                   padding: 3,
                 }}
                 placeholder="Title"
@@ -179,20 +179,7 @@ export default function CardContent() {
               >
                 Content
               </Typography>
-              {/* {errors.value && (
-                <Typography
-                  sx={{
-                    marginLeft: "3px",
-                    fontStyle: "normal",
-                    fontWeight: "400",
-                    fontSize: "16px",
-                    lineHeight: "19px",
-                    color: "rgb(255 0 0)",
-                  }}
-                >
-                  {errors.value}
-                </Typography>
-              )} */}
+              
             </Box>
             <Box sx={{ marginTop: "8px" }}>
               <textarea
@@ -203,9 +190,9 @@ export default function CardContent() {
                 style={{
                   width: "704px",
                   minHeight: "74px",
-                  background: "#FFFFFF", // se repete
-                  border: "1px solid #777777", // se repete
-                  borderRadius: "8px", //se repete
+                  background: "#FFFFFF", 
+                  border: "1px solid #777777", 
+                  borderRadius: "8px", 
                 }}
               />
             </Box>
@@ -213,8 +200,9 @@ export default function CardContent() {
               sx={{
                 display: "flex",
                 justifyContent: "end",
-                marginTop: "24px",
+                marginTop: "15px",
                 marginRight: "17px",
+                
               }}
             >
               <Button

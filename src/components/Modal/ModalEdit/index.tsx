@@ -166,9 +166,9 @@ export default function ModalEdit({
                     style={{
                       width: "812px",
                       height: "32px",
-                      background: "#FFFFFF", // se repete
-                      border: "1px solid #777777", // se repete
-                      borderRadius: "8px", //se repete
+                      background: "#FFFFFF", 
+                      border: "1px solid #777777", 
+                      borderRadius: "8px", 
                       padding: 3,
                     }}
                     placeholder="Title"

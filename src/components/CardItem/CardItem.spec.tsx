@@ -8,9 +8,7 @@ import { QueryClient, QueryClientProvider } from "react-query";
 const queryClient = new QueryClient();
 
 import { Provider } from "react-redux";
-import { useRouter } from "next/router";
 
-// mock useRouter
 jest.mock("next/router", () => ({
   useRouter() {
     return {
