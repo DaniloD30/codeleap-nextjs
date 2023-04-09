@@ -32,7 +32,7 @@ export default function CardItem({ post }: Item) {
       <Box
         sx={{
           width: "752px",
-          height: "316px",
+          minHeight: "316px",
           background: "#FFFFFF",
           border: "1px solid #999999",
           borderRadius: "16px",
@@ -126,12 +126,15 @@ export default function CardItem({ post }: Item) {
           </Grid>
           <Grid
             item
+            xs={11}
+          
             sx={{ marginTop: "16px", maxHeight: "165px", overflowX: "auto" }}
           >
             <Typography
               sx={{
                 fontStyle: "normal",
                 fontWeight: "400",
+                overflowWrap: "break-word",
                 fontSize: "18px",
                 lineHeight: "21px",
                 color: "#000000",
