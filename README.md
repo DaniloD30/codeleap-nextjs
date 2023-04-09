@@ -48,7 +48,7 @@ How to Install
 
 ```bash
 1. git clone
-2. cd codeleap-app
+2. cd codeleap-nextjs
 ```
 
 - Install the dependencies and start:
